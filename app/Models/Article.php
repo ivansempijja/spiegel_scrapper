@@ -15,7 +15,10 @@ class Article extends Model
     protected $primaryKey = 'article_id';   
     public $incrementing = false;
     
-    //create a 12 string long unique primary key for our model
+    /*create a 12 string long unique primary 
+    *key for our model
+    *
+    */
     protected static function boot()
     {
         parent::boot();
