@@ -1,8 +1,11 @@
-import { createApp } from "vue";
-import Home from "./pages/Home.vue"; 
 
-//import sass and 
 import './bootstrap';
 import '../sass/app.scss';
 
-//createApp(Home).mount("#app");
+import { createApp } from "vue";
+import ArticleList from "./components/articleList.vue"; 
+
+
+const app = createApp();
+app.component('article-list', ArticleList);
+app.mount("#app");
