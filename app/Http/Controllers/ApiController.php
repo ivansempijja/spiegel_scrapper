@@ -9,7 +9,7 @@ class ApiController extends Controller
 {
     public function get_articles()
     {
-        $articles = Article::latest()->paginate(30);
+        $articles = Article::latest()->paginate(50);
         return response()->json($articles);
     }
 }

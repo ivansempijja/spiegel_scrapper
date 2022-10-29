@@ -1,17 +1,17 @@
-<header class="fix-top"> 
-    <nav class="navbar navbar-dark bg-secondary">
-      <div class="container px-md-5">
+<header class="sticky-top"> 
+    <nav class="navbar navbar-dark bg-danger">
+      <div class="container">
         <a class="navbar-brand" href="#">
-          Ivan Scrapper
+          SPIEGEL scrapper
         </a>
       </div>
     </nav>
     <div class="border-bottom bg-light">
-      <div class="container py-3 px-md-5">
+      <div class="container py-3">
         <nav class="nav d-flex">
-          <a class="me-4 link-secondary" href="#">Home</a>
-          <a class="me-4 link-secondary" href="#">Api Documentaion</a>
-          <a class="me-4 link-secondary" target="_blank" href="https://github.com/ivansempijja/spiegel_scrapper">
+          <a class="me-4 navlink" href="#">Home</a>
+          <a class="me-4 navlink" href="#">About</a>
+          <a class="me-4 navlink" target="_blank" href="https://github.com/ivansempijja/spiegel_scrapper">
             View code on gitHub
           </a>
         </nav>
