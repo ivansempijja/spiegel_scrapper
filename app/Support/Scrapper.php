@@ -5,9 +5,23 @@ namespace App\Support;
 use Goutte\Client;
 use App\Models\Article;
 
+/**
+ * Scrapper
+ * 
+ * Scrapper class service container is the handler
+ * for the ScrapeData command class
+ */
 class Scrapper 
 {
 
+    /**
+     * @return String
+     * 
+     * Function scrapes data from the spiel_url
+     * will check if the found article is already stored in DB
+     * If not the article is added to the DB via the Article model
+     * 
+     */
     public function scrape()
     {
         $client = new Client();
@@ -25,7 +39,7 @@ class Scrapper
                     return [$child->text()];
             });
 
-            //get data when post has author image
+            //get date when post has author image
             $date_with_author_img = $node->children('div > footer > span')->each(function ($child){
                 return [$child->text()];
             });
@@ -65,7 +79,7 @@ class Scrapper
 
         });
 
-        dd($count);
+        return "{$article->count()} new articles have been saved";
     }
 
 }
