@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Support;
+namespace App\Http\Controllers;
 
 use Goutte\Client;
-use App\Models\Article;
+use Illuminate\Http\Request;
 
-class Scrapper 
+class WebsiteController extends Controller
 {
-
-    public function scrape()
+    public function index()
     {
         $client = new Client();
         $url = env('SPIEGEL_URL');
@@ -55,17 +54,9 @@ class Scrapper
                 'excerpt' => implode($except_array),
                 'article_date' => $date_array[0][0] ?? $date_with_author_img[0][0]
             ];
-
-            //check if article has already been stored
-            $is_already_stored = Article::where($article)->count();
-            if($is_already_stored == 0){
-                $article = Article::create($article);
-                return $article;
-            }
-
+            
+            return $article;
         });
-
-        dd($count);
+    
     }
-
 }

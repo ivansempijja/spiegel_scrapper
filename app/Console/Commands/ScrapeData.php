@@ -24,7 +24,7 @@ class ScrapeData extends Command
     /**
      * Execute the console command.
      * 
-     * @var class Scrapper
+     * @var Scrapper
      * @return int
      */
     public function handle(Scrapper $scrapper)
