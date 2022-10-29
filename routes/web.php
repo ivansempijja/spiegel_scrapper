@@ -13,5 +13,6 @@ use App\Http\Controllers\WebsiteController;
 |
 */
 
-Route::get('/', [WebsiteController::class, 'index']);
+Route::get('/', [WebsiteController::class, 'index'])->name("home");
+Route::get('/about', [WebsiteController::class, 'about'])->name("about");
 

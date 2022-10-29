@@ -2,9 +2,11 @@
     <article class="col-12 my-5" v-for="article in articles">
         <div class="row">
             <div class="col-md-7">
-                <h5 class="mt-md-2 text-danger">{{ article.title }}</h5>
+                <a :href='`${article.article_link}`' target="_blank">
+                    <h5 class="mt-md-2">{{ article.title }}</h5>
+                </a>    
                 <p class="mt-2 mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo sequi animi maiores, at vero voluptates architecto sit aperiam provident omnis deleniti natus eum ex ad odit voluptate soluta cupiditate ea. Sed laborum veniam voluptatem natus cum ab atque. Aperiam blanditiis distinctio error qui eius accusamus quae ipsa suscipit, harum quos!
+                    {{ article.excerpt }}
                 </p>
                 <span>
                     <p class="text-muted">{{ article.article_date }}</p>

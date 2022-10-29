@@ -10,7 +10,7 @@ A simple laravel and vuejs project that scrappes articles from the home page of
 - Run npm build to build js and scss assets
 
 ## Setting up enviroment
-- create a .env file in the project root directory (see env.example)
+- create a .env file in the project root directory (see .env.example)
 - Add you database configs and other needed configs to .env
 - Run php artisan:migrate to run the database migrations
 - Run php artisan serve (to run project using php server), you can also use
@@ -23,7 +23,7 @@ and store the articles in an Articles model
 - **Only new articles that are not already in the database will be saved**
 
 ## Json API
-The project includes an end point that returns a json response for the articles,
+The project includes an end point that returns a json response for the articles,   
 go to http://127.0.0.1:8000/api/article to get the json data
 
 ## Troubleshooting
@@ -35,5 +35,5 @@ go to http://127.0.0.1:8000/api/article to get the json data
 
 ## License
 
-This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).\
 **There are no guarantees implied**. This code should only be used for study or learning reasons.

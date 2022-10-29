@@ -9,9 +9,9 @@
     <div class="border-bottom bg-light">
       <div class="container py-3">
         <nav class="nav d-flex">
-          <a class="me-4 navlink" href="#">Home</a>
-          <a class="me-4 navlink" href="#">About</a>
-          <a class="me-4 navlink" target="_blank" href="https://github.com/ivansempijja/spiegel_scrapper">
+          <a class="me-4 active" href="{{ route("home") }}">Home</a>
+          <a class="me-4" href="{{ route("about") }}">About</a>
+          <a class="me-4" target="_blank" href="https://github.com/ivansempijja/spiegel_scrapper">
             View code on gitHub
           </a>
         </nav>

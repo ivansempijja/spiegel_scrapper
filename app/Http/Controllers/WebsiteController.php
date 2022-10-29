@@ -11,4 +11,9 @@ class WebsiteController extends Controller
     {
         return view('pages.index');
     }
+
+    public function about()
+    {
+        return view('pages.about');
+    }
 }
