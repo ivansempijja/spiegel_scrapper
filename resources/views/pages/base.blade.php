@@ -12,8 +12,8 @@
     </head>
     <body class="antialiased">
         <div id="app">
-            <div class="container">
-                <h1>Hello world</h1>
+            <div class="py-4">
+                @yield('content')
             </div>
         </div>
     </body>

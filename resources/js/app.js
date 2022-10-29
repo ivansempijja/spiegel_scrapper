@@ -1,4 +1,8 @@
 import { createApp } from "vue";
 import Home from "./pages/Home.vue"; 
 
-createApp(Home).mount("#app");
+//import sass and 
+import './bootstrap';
+import '../sass/app.scss';
+
+//createApp(Home).mount("#app");
