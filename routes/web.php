@@ -14,3 +14,4 @@ use App\Http\Controllers\WebsiteController;
 */
 
 Route::get('/', [WebsiteController::class, 'index']);
+

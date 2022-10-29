@@ -80,7 +80,7 @@ class Scrapper
         });
 
         $article_count = count(array_filter($articles, function($x) { return !empty($x); }));
-        echo "Task complete: {$article_count} new articles have been saved";
+        return "Task complete: {$article_count} new articles have been saved";
     }
 
 }

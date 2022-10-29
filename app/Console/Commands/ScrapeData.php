@@ -29,7 +29,7 @@ class ScrapeData extends Command
      */
     public function handle(Scrapper $scrapper)
     {
-        $scrapper->scrape();
-        return Command::SUCCESS;
+        $message = $scrapper->scrape();
+        $this->info($message);
     }
 }
